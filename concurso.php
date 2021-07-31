@@ -1,5 +1,9 @@
 <?php
 
+// Autor: Lucas Rodrigues Ferreira
+// Antes de executar, instale as dependências com composer install
+// Execute com o comando php concurso.php
+
 include 'vendor/autoload.php';
 
 $resultado_pdf = "ED_6__2019__DPDF_DEFENSOR_RES_PROVISORIO_OBJETIVA.PDF";
