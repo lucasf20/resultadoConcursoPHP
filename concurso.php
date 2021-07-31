@@ -1,12 +1,16 @@
 <?php
 
 // Autor: Lucas Rodrigues Ferreira
+
 // Antes de executar, instale as dependências com composer install
 // Execute com o comando php concurso.php
 
+// Este código retornará dois arquivos CSV, o primeiro é a lista da ampla concorrencia
+// o segundo é a lista de candidatos com deficiencia.
+
 include 'vendor/autoload.php';
 
-$resultado_pdf = "ED_6__2019__DPDF_DEFENSOR_RES_PROVISORIO_OBJETIVA.PDF";
+$resultado_pdf = "ED_6__2019__DPDF_DEFENSOR_RES_PROVISORIO_OBJETIVA.PDF"; //PDF de entrada
 
 $parser = new \Smalot\PdfParser\Parser();
 $pdf    = $parser->parseFile($resultado_pdf);
